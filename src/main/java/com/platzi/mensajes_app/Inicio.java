@@ -5,22 +5,20 @@
  */
 package com.platzi.mensajes_app;
 
-import java.sql.Connection;
 import java.util.Scanner;
 
 /**
- *
  * @author ohmyfi
  */
 public class Inicio {
-    
-    public static void main(String[] args){
-    
-       Scanner sc = new Scanner(System.in);
-       
-       int opcion=0;
-       
-       do{
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int opcion = 0;
+
+        do {
             System.out.println("-----------------");
             System.out.println(" Aplicacion de mensajes");
             System.out.println(" 1. crear mensaje");
@@ -30,8 +28,8 @@ public class Inicio {
             System.out.println(" 5. salir");
             //leemos la opcion del usuario
             opcion = sc.nextInt();
-            
-            switch (opcion){
+
+            switch (opcion) {
                 case 1:
                     mensajesService.crearMensaje();
                     break;
@@ -47,10 +45,10 @@ public class Inicio {
                 default:
                     break;
             }
-           
-       }while(opcion != 5);
-        
-       
+
+        } while (opcion != 5);
+
+
     }
-    
+
 }
